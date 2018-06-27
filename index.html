@@ -1,49 +1,166 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/serif.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h2>Spatial Hypertext for End-User Development Tools</h2>
+            <p>
+                <small>
+                    <a href="https://www.iisys.de/en/profiles/daniel-rossner.html">Daniel Roßner</a> and
+                    <a href="https://www.iisys.de/en/profiles/claus-atzenbeck.html">Claus Atzenbeck</a>
+                </small>
+            </p>
+            <p>
+                <small>
+                    Funded by <a href="https://www.bmbf.de/">BMBF</a> ( German Federal Ministry of Education and Research )
+                </small>
+            </p>
+        </section>
+        <section>
+            <section>
+                <h2>What is spatial hypertext?</h2>
+            </section>
+            <section>
+                <ul>
+                    <li>Spatial appearance as context for nodes (with content)</li>
+                    <li class="fragment fade-up">Posi  tio   n</li>
+                    <li class="fragment fade-up"><font color="red">Co</font><font color="green">lo</font><font color="blue">rs</font></li>
+                    <span class="fragment fade-up">
+                        <li><strong>Size</strong></li>
+                        <li>... and many more</li>
+                    </span>
+                </ul>
+            </section>
+            <section>
+                <figure>
+                    <img src="/res/Pinboard.jpg" alt="pinboard with many many nodes">
+                    <small>
+                        <a href="https://de.wikipedia.org/wiki/Datei:Pinboard.jpg">CC BY-SA 2.5 (Cornelia Durka / Birgit Vogel)</a>
+                    </small>
+                </figure>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+            </section>
+            <section>
+                <blockquote cite="http://doi.acm.org/10.1145/208344.208350">
+                    Thus, spatial hypertext is not only a means of presenting readers and authors with
+                    visualizations of existing structure; it is also a way to take advantage of human perceptual abilities
+                    in hypertext navigation [...]
+                </blockquote>
+                <p><small><a href="http://doi.acm.org/10.1145/208344.208350">
+                    Marshall, C. C. & Shipman III, F. M. Spatial Hypertext: Designing for Change Commun. ACM, ACM, 1995, 38, 88-97
+                </a></small></p>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h2>What is End-User Development?</h2>
+                <small>And which tools are used?</small>
+            </section>
+            <section>
+                <ul>
+                    <li>There are various definitions</li>
+                    <li>Some refer to the skill level of a developer,</li>
+                    <li>others to "development for personal use"</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Examples</h3>
+                <p>A layperson, in sense of programming and developing, wants to create a webpage.</p>
+                <p>Journalists, who want to analyze some data from the web.</p>
+            </section>
+            <section>
+                <h3>Tools</h3>
+                <ul>
+                    <li>Tables, functions in spreadsheets</li>
+                    <li>Remix of modules and content (Yahoo!Pipes)</li>
+                    <li>Mashup of web pages or applications
+                        (<a href="https://link.springer.com/chapter/10.1007%2F978-3-319-28727-0_6">WebMakeup</a>)
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <figure>
+                    <img src="res/pipes_digital.png" alt="Screenshot of pipes.digital">
+                    <figcaption>
+                        Screenshot of <a href="https://www.pipes.digital/editor">PIPES</a> (Yahoo!Pipes clone)
+                    </figcaption>
+                </figure>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h2>What does spatial hypertext mean, in context of EUD tools?</h2>
+            </section>
+            <section>
+                <p>User can use given space to position his modules (right). On the left side, position is fixed.</p>
+                <figure>
+                    <img src="res/balti_spatialex.svg" style="border: none" width="70%">
+                    <small><strong>FAT</strong> arrows show explicit connections (like pipes).</small>
+                </figure>
+            </section>
+            <section>
+                <p>Well, that's great <em>so far</em>, but</p>
+                <ul>
+                    <li class="fragment fade-up">
+                        the application should interpret the spatial structure <em>like a human</em> would
+                    </li>
+                    <li class="fragment fade-up">
+                        and use this information to <em>improve</em> the process of building an application (or whatever).
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <img src="res/balti_spatialex_unders.png">
+            </section>
+        </section>
+    </div>
+</div>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+        dependencies: [
+            { src: 'plugin/markdown/marked.js' },
+            { src: 'plugin/markdown/markdown.js' },
+            { src: 'plugin/notes/notes.js', async: true },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+    });
+    Reveal.configure({ slideNumber: true });
+    Reveal.configure({ slideNumber: 'c/t' });
+</script>
+</body>
 </html>
