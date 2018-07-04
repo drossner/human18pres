@@ -43,6 +43,11 @@
                     Press "Esc" for a presentation map. Click <a href="?print-pdf">here</a> for the pdf view.
                 </small>
             </p>
+            <p>
+                <small>
+                    Use arrow keys to navigate or N(ext) and P(revious).
+                </small>
+            </p>
         </section>
         <section>
             <section>
@@ -59,14 +64,16 @@
                     </span>
                 </ul>
             </section>
-            <section>
+            <section data-transition="none-in fade-out">
                 <figure>
                     <img src="res/Pinboard.jpg" alt="pinboard with many many nodes">
                     <small>
                         <a href="https://de.wikipedia.org/wiki/Datei:Pinboard.jpg">CC BY-SA 2.5 (Cornelia Durka / Birgit Vogel)</a>
                     </small>
                 </figure>
-
+            </section>
+            <section data-transition="fade">
+                <img src="res/augmentedPinboard.jpg"/>
             </section>
             <section>
                 <blockquote cite="http://doi.acm.org/10.1145/208344.208350">
@@ -130,7 +137,7 @@
                 <p>Well, that's great <em>so far</em>, but</p>
                 <ul>
                     <li class="fragment fade-up">
-                        the application should interpret the spatial structure <em>like a human</em> would
+                        the application should interpret the spatial structure <em>like a human</em> would do
                     </li>
                     <li class="fragment fade-up">
                         and use this information to <em>improve</em> the process of building an application (or whatever).
@@ -188,16 +195,65 @@
             <section>
                 <ul>
                     <li>Context sensitive hints/ suggestions</li>
-                    <li>Context is a computer generated <b>interpretation</b> of the workspace,</li>
-                    <li>that is as close as possible to that of a <b>human</b></li>
+                    <li>Context is a computer generated <strong>interpretation</strong> of the workspace,</li>
+                    <li>that is as close as possible to that of a <strong>human</strong></li>
                     <li>Of corse, a suitable knowledge base is needed...</li>
                 </ul>
             </section>
         </section>
         <section>
             <section>
-                <h2>So far the theory</h2>
+                <h2>Theory &rarr; Practice</h2>
                 <p>Example case: HEIMDALL</p>
+            </section>
+            <section>
+                <ul>
+                    <li>Part of <strong>ODIN</strong></li>
+                    <li>Open Data Innovation</li>
+                    <li>Platform for professional developers and laypersons to work with open data</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li><b>Developers</b> create components (traditional coding)</li>
+                    <li>End users are working with a graphical tool to compose these components</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li class="fragment fade-up">A journalist (e.g.) wants to aggregate weather data with traffic accidents</li>
+                    <li class="fragment fade-up">Takes two data sources (weather and traffic data)</li>
+                    <li class="fragment fade-up">Combine them with a aggregation/ filter/ ... component</li>
+                    <li class="fragment fade-up">Adds a visualization component</li>
+                </ul>
+            </section>
+            <section>
+                <a href="https://www.ted.com/talks/tim_berners_lee_the_year_open_data_went_worldwide#t-83108"><img src="res/timblexpl.png"/></a>
+                <p><small>Tim Berners Lee | TED2010 - The year open data went world wide (01:30)</small></p>
+            </section>
+            <section>
+                <h3>Starting point</h3>
+                <ul>
+                    <li>An infrastructure +Workspace, called <a href="https://cubbles.world/bde/bde-odin@2.1.0-SNAPSHOT/bde/index.html">
+                        BDE (Browser-based Development Environment)
+                    </a> </li>
+                    <li>Some very(!) basic software components, called <a href="https://cubbles.github.io/">Cubbles</a> </li>
+                    <li>Our hypermediasystem <a href="https://doi.org/10.1145/3209542.3209570">Mother</a></li>
+                    <li>For mother refer to Prof. Atzenbeck's presentation on wednesday ~16:30</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Challenges</h3>
+                <ul>
+                    <li>Integrate spatial hypertext features into an existing application</li>
+                    <li>Generate a suitable knowledgebase</li>
+                    <li>Validate results</li>
+                </ul>
+            </section>
+            <section>
+                <figure>
+                    <img src="res/architectureMother.png" width="500px"/>
+                </figure>
             </section>
         </section>
     </div>
